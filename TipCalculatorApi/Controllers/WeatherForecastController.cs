@@ -59,7 +59,7 @@ public class WeatherForecastController : ControllerBase
                 results.Add($"Total with {percentage * 100}% tip", bill.Amount + tipAmount);
             }
 
-            // Save to the database if needed
+            
             _context.Bills.Add(bill);
             _context.SaveChanges();
 
